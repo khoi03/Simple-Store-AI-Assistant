@@ -1,0 +1,8 @@
+chroma_*
+chroma
+chromadb*
+chromadb
+.DS_Store
+__pycache__/
+**/__pycache__/
+response/

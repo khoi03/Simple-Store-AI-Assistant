@@ -1,0 +1,20 @@
+version: '3'
+interval: 1s
+tasks:
+  default:
+    desc: Build and run the web app
+    cmds:
+      - conda install onnxruntime -c conda-forge -y
+      - pip install -r requirements.txt
+      - if ! command -v ollama &> /dev/null; then curl -fsSL https://ollama.com/install.sh | sh; fi
+      - ollama pull llama3.1
+
+  db:
+    desc: create chromadb
+    cmds: 
+      - python backend/create_database.py
+
+  run: 
+    desc: run chatbot 
+    cmds: 
+      - python app.py
