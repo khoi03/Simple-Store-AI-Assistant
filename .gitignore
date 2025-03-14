@@ -3,6 +3,7 @@ chroma
 chromadb*
 chromadb
 .DS_Store
+model_cache/
 __pycache__/
 **/__pycache__/
 response/

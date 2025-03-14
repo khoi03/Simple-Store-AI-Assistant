@@ -56,7 +56,12 @@ class ChatBot:
     # Load model from transformer pipeline
     def load_model(self):
 
-        self.chat_model = ChatOllama(model=self.model_id, temperature=0.2, top_k=10, top_p=0.5)
+        self.chat_model = ChatOllama(
+            model=self.model_id, 
+            temperature=0.2, 
+            top_k=10, 
+            top_p=0.5,
+        )
 
         self.trimmer = trim_messages(
             max_tokens=100000,

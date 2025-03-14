@@ -33,7 +33,8 @@ def get_embedding_function():
     embedding_function = HuggingFaceEmbeddings(
         model_name=model_name,
         model_kwargs=model_kwargs,
-        encode_kwargs=encode_kwargs
+        encode_kwargs=encode_kwargs,
+        cache_folder="model_cache"
     )
 
     return embedding_function
