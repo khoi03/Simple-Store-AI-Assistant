@@ -3,6 +3,10 @@
 ## Introduction 
 In this project, we will develop an AI assistant to assist customers at a food store. The **RAG code** has been modified from [this repo](https://github.com/pixegami/langchain-rag-tutorial) and the remaining code was entirely written by **Khôi** and **Khang**.
 
+## Demo
+[Screencast from 14-03-2025 14:15:23.webm](https://github.com/user-attachments/assets/16a79123-737a-49c9-b87c-7bd12e6c654d)
+
+
 ## Install dependencies
 
 1. Create an anaconda environment.
